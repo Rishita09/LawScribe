@@ -1,0 +1,30 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HeroSection from './components/HeroSection';
+import Header from './components/Header';
+import SignIn from './components/auth/SignIn';
+import SignUp from './components/auth/SignUp';
+// Import other components as necessary
+import './App.css';
+
+const App = () => {
+  return (
+    <Router>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HeroSection />} />
+          <Route path="/summarize" element={<div>Summarize Component</div>} />
+          <Route path="/create" element={<div>Create Component</div>} />
+          <Route path="/interactive-ai" element={<div>Interactive AI Component</div>} />
+          <Route path="/blog" element={<div>Blog Component</div>} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
+        </Routes>
+        {/* <Footer /> */}
+      </div>
+    </Router>
+  );
+};
+
+export default App;
