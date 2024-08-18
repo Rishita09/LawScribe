@@ -22,7 +22,7 @@ const Header = () => {
           <Nav.Link as={Link} to="/summarize">
             Summarize Legal Docs
           </Nav.Link>
-          <Nav.Link as={Link} to="/create">
+          <Nav.Link as={Link} to="/create-legal-doc">
             Create Legal Docs
           </Nav.Link>
           <Nav.Link as={Link} to="/interactive-ai">
