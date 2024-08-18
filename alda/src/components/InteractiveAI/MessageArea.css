@@ -1,0 +1,42 @@
+.message-area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.messages-container {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.message.user {
+    align-self: flex-end;
+    background-color: #dcf8c6; /* Example color */
+}
+
+.message.ai {
+    align-self: flex-start;
+    background-color: #f1f0f0; /* Example color */
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+}

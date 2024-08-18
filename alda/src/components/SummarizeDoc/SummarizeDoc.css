@@ -1,0 +1,58 @@
+/* src/components/SummarizeDoc/SummarizeDoc.css */
+.summarize-doc-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.file-input {
+    margin-bottom: 10px;
+}
+
+.generate-summary-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.summary-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: left;
+    position: relative;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.copy-button, .delete-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copy-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.copy-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
