@@ -1,7 +1,6 @@
-/* src/components/InteractiveAI/ChatBox.css */
 .chatbox-container {
     width: 60%;
-    height: 80vh; /* Updated to take 80% of the viewport height */
+    height: 95vh;
     margin: 20px auto;
     background-color: #fff;
     border-radius: 10px;
@@ -13,7 +12,7 @@
 
 .chatbox-container.fullscreen {
     width: 100%;
-    height: 100vh; /* Full height when in fullscreen mode */
+    height: 100vh;
     margin: 0;
     border-radius: 0;
 }

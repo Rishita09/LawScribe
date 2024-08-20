@@ -1,12 +1,10 @@
 import React from 'react';
-import './Footer.css';
+import './LandingPage.css';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
-        <p>© 2024 AI Lawyer. All Rights Reserved.</p>
-      </div>
+      <p>&copy; 2024 LawScribe. All rights reserved.</p>
     </footer>
   );
 };

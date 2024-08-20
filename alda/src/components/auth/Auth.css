@@ -13,6 +13,9 @@
     width: 100%;
     max-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .auth-form h2 {
@@ -69,4 +72,30 @@
 .auth-form button.google-btn:hover {
     background-color: #161b22;
     box-shadow: 0 0 5px #58a6ff;
+}
+
+.or-separator {
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.or-separator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #30363d; /* Match the input border color */
+    z-index: 1;
+}
+
+.or-separator span {
+    position: relative;
+    background: #161b22; /* Match form background color */
+    padding: 0 10px;
+    z-index: 2;
+    color: #c9d1d9; /* Match text color */
 }

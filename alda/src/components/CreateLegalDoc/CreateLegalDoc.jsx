@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from './Sidebar';
-import BottomBar from './BottomBar';
+// import BottomBar from './BottomBar';
 import DocumentArea from './DocumentArea';
 import './CreateLegalDoc.css';
 
@@ -10,7 +10,7 @@ const CreateLegalDoc = () => {
             <Sidebar />
             <div className="content-container">
                 <DocumentArea />
-                <BottomBar />
+                {/* <BottomBar /> */}
             </div>
         </div>
     );

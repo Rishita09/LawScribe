@@ -1,0 +1,35 @@
+.services {
+    padding: 2rem;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .service-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .service {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service i {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  .service h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  

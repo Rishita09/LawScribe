@@ -1,0 +1,72 @@
+.navbar {
+  position: relative;
+  padding-right: 90px; /* Reduced space for the dropdown */
+  padding-left: 20px; /* Added some padding to the left for alignment */
+  background-color: #000; /* Ensure background color if needed */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 100px; /* Adjust size to be visible but not too big */
+  margin-right: 10px;
+}
+
+.navbar-nav {
+  margin-left: auto; /* Pushes the nav items to the right */
+}
+
+.nav-link {
+  color: #ffffff !important; /* Ensure nav links are white */
+  margin-right: 15px; /* Space between nav items */
+}
+
+.nav-link:hover {
+  color: #d3d3d3 !important; /* Change color on hover */
+}
+
+.nav-dropdown-menu {
+  right: 0;
+  left: auto;
+  min-width: 70px; /* Reduced width of dropdown menu */
+  padding: 0px; /* Reduced padding */
+}
+
+.nav-dropdown-toggle::after {
+  display: none; /* Remove default drop down icon */
+}
+
+.avatar-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 16px;
+}
+
+.navbar-toggler-icon {
+  background-image: url('/images/hamburger.png'); /* Update to your hamburger icon path */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 767px) {
+  .navbar {
+      padding-left: 10px; /* Adjust for mobile view */
+      padding-right: 10px; /* Adjust for mobile view */
+  }
+
+  .navbar-nav {
+      text-align: center;
+  }
+
+  .nav-link {
+      margin: 0;
+  }
+}

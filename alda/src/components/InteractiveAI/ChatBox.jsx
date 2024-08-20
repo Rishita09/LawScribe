@@ -16,12 +16,6 @@ const ChatBox = () => {
 
     const toggleFullScreen = () => {
         setIsFullscreen(!isFullscreen);
-        const chatBox = document.querySelector('.chatbox-container');
-        if (isFullscreen) {
-            chatBox.classList.remove('fullscreen');
-        } else {
-            chatBox.classList.add('fullscreen');
-        }
     };
 
     const handleDelete = () => {

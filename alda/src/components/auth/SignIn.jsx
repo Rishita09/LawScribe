@@ -53,17 +53,20 @@ const SignIn = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button type="submit">Sign In</button>
+        <div className="or-separator">
+          <span>OR</span>
+        </div>
+        <div className="google-signin">
+          <GoogleLogin
+            clientId="397870644736-h93ks1oq92hbtgdoq6ha4qgie3hvema0.apps.googleusercontent.com"
+            buttonText="Sign In with Google"
+            onSuccess={handleGoogleSuccess}
+            onFailure={handleGoogleFailure}
+            cookiePolicy={'single_host_origin'}
+          />
+        </div>
         <Link to="/signup">Don't have an account? Sign Up</Link>
       </form>
-      <div className="google-signin">
-        <GoogleLogin
-          clientId="397870644736-h93ks1oq92hbtgdoq6ha4qgie3hvema0.apps.googleusercontent.com"
-          buttonText="Sign In with Google"
-          onSuccess={handleGoogleSuccess}
-          onFailure={handleGoogleFailure}
-          cookiePolicy={'single_host_origin'}
-        />
-      </div>
     </div>
   );
 };
