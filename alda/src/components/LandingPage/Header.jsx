@@ -31,9 +31,38 @@ const Header = () => {
           <Nav.Link as={Link} to="/summarize">
             Summarize Legal Docs
           </Nav.Link>
-          <Nav.Link as={Link} to="/create-legal-doc">
-            Create Legal Docs
-          </Nav.Link>
+          <NavDropdown title="Create Legal Docs" id="legal-docs-dropdown">
+            <NavDropdown.Item as={Link} to="/create-legal-doc/property-sale-agreement">
+              Property Sale Agreement
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/create-legal-doc/employee-service-agreement">
+              Employee Service Agreement
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/create-legal-doc/general-power-of-attorney">
+              General Power of Attorney
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/create-legal-doc/deed-of-lease">
+              Deed of Lease
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/create-legal-doc/defamation-notice">
+              Defamation Notice
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/create-legal-doc/salary-non-payment-notice">
+              Salary Non-Payment Notice to Company
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/create-legal-doc/loan-agreement-with-security">
+              Loan Agreement with Security
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/create-legal-doc/mutual-divorce-petition">
+              Mutual Divorce Petition
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/create-legal-doc/restraining-order">
+              Restraining Order
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/create-legal-doc/gift-deed-for-giving-cash">
+              Gift Deed for Giving Cash to Son/Daughter
+            </NavDropdown.Item>
+          </NavDropdown>
           <Nav.Link as={Link} to="/interactive-ai">
             Interactive AI
           </Nav.Link>

@@ -1,0 +1,131 @@
+.mutual-divorce-petition {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1b1b2f;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.mutual-divorce-petition h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.mutual-divorce-petition h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #7c1440;
+    font-size: 18px;
+}
+
+.mutual-divorce-petition form {
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0f1e;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.mutual-divorce-petition input,
+.mutual-divorce-petition textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #303245;
+    color: #fff;
+}
+
+.mutual-divorce-petition textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.mutual-divorce-petition button {
+    padding: 12px 20px;
+    background-color: #7c1440;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    text-align: center;
+}
+
+.mutual-divorce-petition button:hover {
+    background-color: #57102d;
+}
+
+.generated-document {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #0f0f1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #bbb;
+}
+
+.generated-document h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.generated-document pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #303245;
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.generated-document .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.generated-document button {
+    padding: 10px 18px;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    text-align: center;
+}
+
+.generated-document button:hover {
+    background-color: #125ea3;
+}
+
+.generated-document .delete-button {
+    background-color: #d32f2f;
+}
+
+.generated-document .delete-button:hover {
+    background-color: #b02121;
+}

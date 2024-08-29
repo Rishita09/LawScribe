@@ -4,12 +4,12 @@ import WhyChooseUs from './WhyChooseUs';
 // import FeedbackSection from './FeedbackSection';
 import ServicesSection from './ServicesSection';
 import Footer from './Footer';
-import Header from './Header';
+// import Header from './Header';
 
 const LandingPage = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <HeroSection />
       <WhyChooseUs />
       {/* <FeedbackSection /> */}

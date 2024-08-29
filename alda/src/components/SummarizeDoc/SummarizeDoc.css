@@ -3,6 +3,7 @@
     flex-direction: column;
     height: 100vh; /* Full viewport height */
     padding: 20px;
+    padding-top: 80px;
     box-sizing: border-box;
   }
   

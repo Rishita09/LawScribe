@@ -1,12 +1,15 @@
 .message-area {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: calc(100vh - 120px); /* Adjust height based on header and padding */
+    padding-top: 80px; /* Ensure it starts below the header, adjust this based on the header's height */
 }
 
 .messages-container {
+    padding-top: 80px; 
     flex: 1;
     overflow-y: auto;
+    padding-bottom: 70px; /* Space for the bottom bar */
 }
 
 .message {
@@ -32,6 +35,9 @@
     padding: 10px;
     border-top: 1px solid #e0e0e0;
     background-color: #f9f9f9;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
 }
 
 input {

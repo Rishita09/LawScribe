@@ -10,14 +10,14 @@ const DocumentArea = () => {
     };
 
     const handleDelete = () => {
-        // Logic to clear the generated document content
+       
         console.log('Document deleted');
     };
 
     return (
         <div className="document-area">
             <div className="document-content">
-                {/* The generated document content will be displayed here */}
+
                 <p>Your generated document content goes here...</p>
             </div>
             <div className="document-actions">

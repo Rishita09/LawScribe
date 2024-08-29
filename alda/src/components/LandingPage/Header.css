@@ -1,8 +1,12 @@
 .navbar {
-  position: relative;
-  padding-right: 90px; /* Reduced space for the dropdown */
-  padding-left: 20px; /* Added some padding to the left for alignment */
-  background-color: #000; /* Ensure background color if needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #000; 
+  z-index: 1000; 
 }
 
 .navbar-brand {
@@ -11,32 +15,34 @@
 }
 
 .logo-image {
-  width: 100px; /* Adjust size to be visible but not too big */
+  width: 100px; 
   margin-right: 10px;
 }
 
 .navbar-nav {
-  margin-left: auto; /* Pushes the nav items to the right */
+  margin-left: auto; 
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
-  color: #ffffff !important; /* Ensure nav links are white */
-  margin-right: 15px; /* Space between nav items */
+  color: #ffffff !important; 
+  margin-right: 15px;
 }
 
 .nav-link:hover {
-  color: #d3d3d3 !important; /* Change color on hover */
+  color: #d3d3d3 !important; /* Slightly different color on hover */
 }
 
 .nav-dropdown-menu {
   right: 0;
   left: auto;
-  min-width: 70px; /* Reduced width of dropdown menu */
-  padding: 0px; /* Reduced padding */
+  min-width: 150px; /* Adjusted dropdown width for better usability */
+  padding: 0; /* Reduced padding */
 }
 
 .nav-dropdown-toggle::after {
-  display: none; /* Remove default drop down icon */
+  display: none; /* Remove the default dropdown icon */
 }
 
 .avatar-icon {
@@ -52,21 +58,29 @@
 }
 
 .navbar-toggler-icon {
-  background-image: url('/images/hamburger.png'); /* Update to your hamburger icon path */
+  background-image: url('/images/hamburger.png'); /* Ensure this path is correct */
 }
 
 /* Mobile view adjustments */
 @media (max-width: 767px) {
   .navbar {
-      padding-left: 10px; /* Adjust for mobile view */
-      padding-right: 10px; /* Adjust for mobile view */
+      padding-left: 10px; /* Reduced padding for mobile */
+      padding-right: 10px;
   }
 
   .navbar-nav {
       text-align: center;
+      flex-direction: column; /* Stack items vertically on mobile */
   }
 
   .nav-link {
       margin: 0;
+      padding: 10px 0; /* More space for clicking on mobile */
+  }
+
+  .nav-dropdown-menu {
+      right: auto;
+      left: 50%; /* Center align dropdown */
+      transform: translateX(-50%);
   }
 }

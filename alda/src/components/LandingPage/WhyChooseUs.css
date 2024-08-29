@@ -1,14 +1,19 @@
 .why-choose-us-section {
-  height: 100vh; /* Increased height */
   background-image: url('/path-to-background-image.jpg');
   background-size: cover;
   background-position: center;
   opacity: 0.8;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 4rem 2rem; /* Increased padding for better spacing */
   text-align: center;
-  padding: 2rem;
+}
+
+.why-choose-us-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
 }
 
 .reasons-container {
@@ -32,4 +37,11 @@
 .reason-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.reason-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
