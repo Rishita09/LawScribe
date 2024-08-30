@@ -82,6 +82,9 @@ const Header = () => {
           <NavDropdown.Item as={Link} to="/settings" className="nav-dropdown-item">
             Settings
           </NavDropdown.Item>
+          <NavDropdown.Item onClick={handleLogout} className="nav-dropdown-item">
+            Logout
+          </NavDropdown.Item>
         </NavDropdown>
 
         </Nav>

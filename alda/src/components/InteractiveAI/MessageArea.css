@@ -1,15 +1,15 @@
 .message-area {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 120px); /* Adjust height based on header and padding */
-    padding-top: 80px; /* Ensure it starts below the header, adjust this based on the header's height */
+    height: calc(100vh - 120px); 
+    padding-top: 80px; 
 }
 
 .messages-container {
     padding-top: 80px; 
     flex: 1;
     overflow-y: auto;
-    padding-bottom: 70px; /* Space for the bottom bar */
+    padding-bottom: 70px;
 }
 
 .message {
@@ -22,19 +22,19 @@
 
 .message.user {
     align-self: flex-end;
-    background-color: #dcf8c6;
+    /* background-color: #dcf8c6; */
 }
 
 .message.ai {
     align-self: flex-start;
-    background-color: #f1f0f0;
+    /* background-color: #f1f0f0; */
 }
 
 .input-container {
     display: flex;
     padding: 10px;
     border-top: 1px solid #e0e0e0;
-    background-color: #f9f9f9;
+    background-color: #2c2c2c;
     position: sticky;
     bottom: 0;
     width: 100%;
@@ -46,6 +46,7 @@ input {
     border-radius: 20px;
     border: 1px solid #ccc;
     margin-right: 10px;
+    background-color: #2c2c2c;
 }
 
 button {
