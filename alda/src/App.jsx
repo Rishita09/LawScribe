@@ -25,8 +25,7 @@ const App = () => {
       <div>
       <Header /> 
       <main style={{ marginTop: '60px' }}></main>
-      <Footer />
-        <Routes>
+          <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/summarize" element={<SummarizeDoc />} />
           <Route path="/create-legal-doc" element={<CreateLegalDoc />} />
@@ -39,7 +38,7 @@ const App = () => {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );

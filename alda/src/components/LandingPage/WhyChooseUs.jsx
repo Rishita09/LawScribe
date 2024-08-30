@@ -3,9 +3,9 @@ import './WhyChooseUs.css';
 
 const WhyChooseUs = () => {
   const reasons = [
-    { title: 'Expert AI Models', description: 'Trained on legal documents.', image: '/images/model.jpg' },
-    { title: 'Time-Saving', description: 'Generates documents quickly.', image: '/images/time.jpg' },
-    { title: 'Cost-Effective', description: 'Affordable legal solutions.', image: '/images/cost.jpg' },
+    { title: 'Expert AI Models', description: 'Our AI models are meticulously trained on a vast array of legal documents to ensure high accuracy and reliability in generating legal documents.', image: '/images/model.jpg' },
+    { title: 'Time-Saving', description: 'Our platform significantly reduces the time required to draft legal documents, allowing you to focus on more important tasks.', image: '/images/time.jpg' },
+    { title: 'Cost-Effective', description: 'We offer affordable solutions that make high-quality legal document generation accessible to everyone, without compromising on quality.', image: '/images/cost.jpg' },
   ];
 
   return (

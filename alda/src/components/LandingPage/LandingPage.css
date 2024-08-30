@@ -30,35 +30,6 @@ body {
     text-decoration: none;
 }
 
-/* .hero-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    background-image: url('/path/to/your/chessboard-image.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-} */
-
-.hero-section .hero-content {
-    text-align: center;
-    max-width: 600px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    border-radius: 10px;
-}
-
-.hero-section .hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.hero-section .hero-content p {
-    font-size: 1.25rem;
-    margin-bottom: 30px;
-}
-
 .why-choose-us,
 .services-section,
 .feedback-section,
@@ -99,5 +70,3 @@ body {
 .avatar-menu:hover {
     display: flex;
 }
-
-/* Add more custom styles as needed */

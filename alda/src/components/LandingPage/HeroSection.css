@@ -1,14 +1,12 @@
-/* Import Google Fonts in your main CSS file or HTML head */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300;500&display=swap');
 
 .hero-section {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  background: url('/images/lady-justice.jpg') no-repeat center center/cover; /* Add your image path */
+  justify-content: flex-start; 
+  padding-left: 5%; 
+  background: url('/images/Home.png') no-repeat center center/cover;
   position: relative;
 }
 
@@ -19,39 +17,61 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust opacity for the overlay */
+  background: rgba(0, 0, 0, 0.8); 
   z-index: 1;
 }
 
 .hero-content {
-  position: relative;
+  position: relative; 
   z-index: 2;
-  color: #fff;
+  max-width: 600px; 
+  animation: fadeInLeft 1.5s ease-in-out; 
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 20px;
 }
 
 .hero-content h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: bisque;
 }
 
 .hero-content p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+  text-align: justify;
+  color:blanchedalmond;
 }
 
 .cta-button {
-  padding: 1rem 2rem;
+  padding: 1rem;
   font-size: 1rem;
-  background-color: #007bff;
+  background-color: #5e1f02;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif; /* Match font with header */
+  font-family: 'Montserrat', sans-serif; 
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); 
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; 
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: #97502f;
+  transform: scale(1.05); 
+}
+/* Keyframes for fade-in-left animation */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

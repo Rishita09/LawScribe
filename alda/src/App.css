@@ -1,5 +1,5 @@
 .App {
-  font-family: Arial, sans-serif;
+  font-family: 'SUSE', sans-serif;
   background-color: #f8f9fa;
   min-height: 100vh;
   display: flex;
@@ -9,13 +9,16 @@
   
   h1, h3 {
     color: #333;
+    font-family: 'Rajdhani', sans-serif;
   }
   
   p {
     color: #555;
+  font-family: 'SUSE', sans-serif;
   }
   
   button {
     border-radius: 5px;
+  font-family: 'Rajdhani', sans-serif;
   }
   

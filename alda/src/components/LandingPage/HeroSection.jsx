@@ -12,8 +12,8 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h1>Intelligent contract automation is here.</h1>
-        <p>Developments in AI will transform the way lawyers work. These resources will help you navigate these new opportunities and ways of working, with expert insights and actionable advice on how to leverage AI in legal.</p>
+        <h1>AI-Powered Legal Transformation</h1>
+        <p>Step into the future of law with AI-driven contract automation. From generating and formatting legal documents to delivering concise summaries and interactive legal insights, discover how cutting-edge AI is revolutionizing the legal landscape. Explore expert advice and actionable strategies to stay ahead in this new era of legal innovation with us.</p>
         <button className="cta-button" onClick={handleGetStarted}>Get Started</button>
       </div>
     </section>
