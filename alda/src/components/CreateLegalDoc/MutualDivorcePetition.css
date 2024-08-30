@@ -1,4 +1,4 @@
-.mutual-divorce-petition {
+/* .mutual-divorce-petition {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
@@ -128,4 +128,53 @@
 
 .generated-document .delete-button:hover {
     background-color: #b02121;
+} */
+
+
+.mutual-divorce-petition form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    gap: 15px;
+    background-color: #0f0f1e;
+    padding: 20px;
+    border-radius: 8px;
+    width: 800px;
+    margin: 50px auto;
+}
+
+.mutual-divorce-petition input,
+.mutual-divorce-petition textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #303245;
+    color: #fff;
+}
+
+.mutual-divorce-petition textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.mutual-divorce-petition h3 {
+    grid-column: span 2; 
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #7c1440;
+    font-size: 18px;
+}
+
+.mutual-divorce-petition .form-actions {
+    grid-column: span 2; 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }

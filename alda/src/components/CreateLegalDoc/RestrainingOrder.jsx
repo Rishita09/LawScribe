@@ -109,7 +109,6 @@ const RestrainingOrder = () => {
       URL.revokeObjectURL(url);
     }
   };
-  
 
   const handleDeleteDocument = () => {
     setIsDocumentGenerated(false);
@@ -130,7 +129,6 @@ const RestrainingOrder = () => {
   };
 
   const loadMyDetails = () => {
-    // Logic to load user's stored details
     setFormData({
       courtName: 'High Court',
       judgeName: 'Justice Sharma',
@@ -153,49 +151,53 @@ const RestrainingOrder = () => {
         <button className="load-details-button" onClick={loadMyDetails}>
           Load My Details
         </button>
-        <div className="form-group">
-          <label>Court Name</label>
-          <input
-            type="text"
-            name="courtName"
-            value={formData.courtName}
-            onChange={handleInputChange}
-            className={errors.courtName ? 'input-error' : ''}
-          />
-          {errors.courtName && <p className="error-message">{errors.courtName}</p>}
+        <div className="form-row">
+          <div className="form-group">
+            <label>Court Name</label>
+            <input
+              type="text"
+              name="courtName"
+              value={formData.courtName}
+              onChange={handleInputChange}
+              className={errors.courtName ? 'input-error' : ''}
+            />
+            {errors.courtName && <p className="error-message">{errors.courtName}</p>}
+          </div>
+          <div className="form-group">
+            <label>Judge Name</label>
+            <input
+              type="text"
+              name="judgeName"
+              value={formData.judgeName}
+              onChange={handleInputChange}
+              className={errors.judgeName ? 'input-error' : ''}
+            />
+            {errors.judgeName && <p className="error-message">{errors.judgeName}</p>}
+          </div>
         </div>
-        <div className="form-group">
-          <label>Judge Name</label>
-          <input
-            type="text"
-            name="judgeName"
-            value={formData.judgeName}
-            onChange={handleInputChange}
-            className={errors.judgeName ? 'input-error' : ''}
-          />
-          {errors.judgeName && <p className="error-message">{errors.judgeName}</p>}
-        </div>
-        <div className="form-group">
-          <label>Plaintiff Name</label>
-          <input
-            type="text"
-            name="plaintiffName"
-            value={formData.plaintiffName}
-            onChange={handleInputChange}
-            className={errors.plaintiffName ? 'input-error' : ''}
-          />
-          {errors.plaintiffName && <p className="error-message">{errors.plaintiffName}</p>}
-        </div>
-        <div className="form-group">
-          <label>Defendant Name</label>
-          <input
-            type="text"
-            name="defendantName"
-            value={formData.defendantName}
-            onChange={handleInputChange}
-            className={errors.defendantName ? 'input-error' : ''}
-          />
-          {errors.defendantName && <p className="error-message">{errors.defendantName}</p>}
+        <div className="form-row">
+          <div className="form-group">
+            <label>Plaintiff Name</label>
+            <input
+              type="text"
+              name="plaintiffName"
+              value={formData.plaintiffName}
+              onChange={handleInputChange}
+              className={errors.plaintiffName ? 'input-error' : ''}
+            />
+            {errors.plaintiffName && <p className="error-message">{errors.plaintiffName}</p>}
+          </div>
+          <div className="form-group">
+            <label>Defendant Name</label>
+            <input
+              type="text"
+              name="defendantName"
+              value={formData.defendantName}
+              onChange={handleInputChange}
+              className={errors.defendantName ? 'input-error' : ''}
+            />
+            {errors.defendantName && <p className="error-message">{errors.defendantName}</p>}
+          </div>
         </div>
         <div className="form-group">
           <label>Disputed Property</label>
@@ -237,27 +239,29 @@ const RestrainingOrder = () => {
           ></textarea>
           {errors.irreparableDamage && <p className="error-message">{errors.irreparableDamage}</p>}
         </div>
-        <div className="form-group">
-          <label>Place</label>
-          <input
-            type="text"
-            name="place"
-            value={formData.place}
-            onChange={handleInputChange}
-            className={errors.place ? 'input-error' : ''}
-          />
-          {errors.place && <p className="error-message">{errors.place}</p>}
-        </div>
-        <div className="form-group">
-          <label>Date</label>
-          <input
-            type="date"
-            name="date"
-            value={formData.date}
-            onChange={handleInputChange}
-            className={errors.date ? 'input-error' : ''}
-          />
-          {errors.date && <p className="error-message">{errors.date}</p>}
+        <div className="form-row">
+          <div className="form-group">
+            <label>Place</label>
+            <input
+              type="text"
+              name="place"
+              value={formData.place}
+              onChange={handleInputChange}
+              className={errors.place ? 'input-error' : ''}
+            />
+            {errors.place && <p className="error-message">{errors.place}</p>}
+          </div>
+          <div className="form-group">
+            <label>Date</label>
+            <input
+              type="date"
+              name="date"
+              value={formData.date}
+              onChange={handleInputChange}
+              className={errors.date ? 'input-error' : ''}
+            />
+            {errors.date && <p className="error-message">{errors.date}</p>}
+          </div>
         </div>
         <div className="form-group">
           <label>Advocate Name</label>
@@ -270,7 +274,6 @@ const RestrainingOrder = () => {
           />
           {errors.advocateName && <p className="error-message">{errors.advocateName}</p>}
         </div>
-
         <div className="form-buttons">
           <button
             onClick={handleGenerateOrder}

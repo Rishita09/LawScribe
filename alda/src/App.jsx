@@ -17,6 +17,7 @@ import GiftDeed from './components/CreateLegalDoc/GiftDeed';
 import RestrainingOrder from './components/CreateLegalDoc/RestrainingOrder';
 import MutualDivorcePetition from './components/CreateLegalDoc/MutualDivorcePetition';
 import PropertySaleAgreement from './components/CreateLegalDoc/PropertySaleAgreement';
+import EmployeeServiceAgreement from './components/CreateLegalDoc/EmployeeServiceAgreement';
 import './App.css';
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/summarize" element={<SummarizeDoc />} />
           <Route path="/create-legal-doc" element={<CreateLegalDoc />} />
           <Route path="/create-legal-doc/property-sale-agreement" element={<PropertySaleAgreement />} />
+          <Route path="/create-legal-doc/employee-service-agreement" element={<EmployeeServiceAgreement />} />
           <Route path="/create-legal-doc/restraining-order" element={<RestrainingOrder />} />
           <Route path="/create-legal-doc/gift-deed-for-giving-cash" element={<GiftDeed />} />
           <Route path="/create-legal-doc/mutual-divorce-petition" element={<MutualDivorcePetition />} />

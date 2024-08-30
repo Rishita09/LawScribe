@@ -327,20 +327,19 @@ const MutualDivorcePetition = () => {
                 {errors.courtJurisdiction && <p className="error">{errors.courtJurisdiction}</p>}
 
                 <div className="form-actions">
-                <div className="button-container">
-                    <button type="button" onClick={handleGenerate} className="generate-button">Generate</button>
-                    {isGenerated && (
-                        <div className="button-container">
-                            <button type="button" onClick={() => handleDownload('PDF')} className="download-button">Download PDF</button>
-                            <button type="button" onClick={() => handleDownload('DOCX')} className="download-button">Download Word</button>
-                        </div>
-                    )}
-                    {isGenerated && (
-                        <button type="button" onClick={handleDelete} className="delete-button">Delete</button>
-                    )}
+                    <div className="button-container">
+                        <button type="button" onClick={handleGenerate} className="generate-button">Generate</button>
+                        {isGenerated && (
+                            <div className="button-container">
+                                <button type="button" onClick={() => handleDownload('PDF')} className="download-button">Download PDF</button>
+                                <button type="button" onClick={() => handleDownload('DOCX')} className="download-button">Download Word</button>
+                            </div>
+                        )}
+                        {isGenerated && (
+                            <button type="button" onClick={handleDelete} className="delete-button">Delete</button>
+                        )}
+                    </div>
                 </div>
-            </div>
-
             </form>
         </div>
     );

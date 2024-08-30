@@ -47,6 +47,7 @@ const PropertySaleAgreement = () => {
       ...formData,
       [name]: value,
     });
+    setErrors({ ...errors, [name]: '' }); // Clear the error message
   };
 
   const handleGenerate = () => {
@@ -91,7 +92,7 @@ const PropertySaleAgreement = () => {
     <div className="property-sale-agreement">
       <h2>Property Sale Agreement</h2>
       <form>
-        <button type="button" onClick={() => console.log("Load my details")}>
+        <button type="button" className= 'load-details-button' onClick={() => console.log("Load my details")}>
           Load My Details
         </button>
 
@@ -149,35 +150,229 @@ const PropertySaleAgreement = () => {
           </div>
         </div>
 
-        {/* Add other fields in similar fashion */}
-        {/* Example field for sale price */}
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="houseDescription">House Description</label>
+            <input
+              type="text"
+              id="houseDescription"
+              name="houseDescription"
+              value={formData.houseDescription}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.houseDescription && <span className="error-message">{errors.houseDescription}</span>}
+          </div>
+          <div className="form-group">
+            <label htmlFor="salePrice">Sale Price (Rs.)</label>
+            <input
+              type="number"
+              id="salePrice"
+              name="salePrice"
+              value={formData.salePrice}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.salePrice && <span className="error-message">{errors.salePrice}</span>}
+          </div>
+        </div>
+
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="earnestMoney">Earnest Money (Rs.)</label>
+            <input
+              type="number"
+              id="earnestMoney"
+              name="earnestMoney"
+              value={formData.earnestMoney}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.earnestMoney && <span className="error-message">{errors.earnestMoney}</span>}
+          </div>
+          <div className="form-group">
+            <label htmlFor="paymentDate">Payment Date</label>
+            <input
+              type="date"
+              id="paymentDate"
+              name="paymentDate"
+              value={formData.paymentDate}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.paymentDate && <span className="error-message">{errors.paymentDate}</span>}
+          </div>
+        </div>
+
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="completionPeriod">Completion Period (days)</label>
+            <input
+              type="number"
+              id="completionPeriod"
+              name="completionPeriod"
+              value={formData.completionPeriod}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.completionPeriod && <span className="error-message">{errors.completionPeriod}</span>}
+          </div>
+          <div className="form-group">
+            <label htmlFor="titleDeedsDelivery">Title Deeds Delivery</label>
+            <input
+              type="text"
+              id="titleDeedsDelivery"
+              name="titleDeedsDelivery"
+              value={formData.titleDeedsDelivery}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.titleDeedsDelivery && <span className="error-message">{errors.titleDeedsDelivery}</span>}
+          </div>
+        </div>
+
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="refundDays">Refund Days</label>
+            <input
+              type="number"
+              id="refundDays"
+              name="refundDays"
+              value={formData.refundDays}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.refundDays && <span className="error-message">{errors.refundDays}</span>}
+          </div>
+          <div className="form-group">
+            <label htmlFor="interestRate">Interest Rate (%)</label>
+            <input
+              type="number"
+              id="interestRate"
+              name="interestRate"
+              value={formData.interestRate}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.interestRate && <span className="error-message">{errors.interestRate}</span>}
+          </div>
+        </div>
+
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="encumbrances">Encumbrances</label>
+            <input
+              type="text"
+              id="encumbrances"
+              name="encumbrances"
+              value={formData.encumbrances}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.encumbrances && <span className="error-message">{errors.encumbrances}</span>}
+          </div>
+          <div className="form-group">
+            <label htmlFor="possessionDate">Possession Date</label>
+            <input
+              type="date"
+              id="possessionDate"
+              name="possessionDate"
+              value={formData.possessionDate}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.possessionDate && <span className="error-message">{errors.possessionDate}</span>}
+          </div>
+        </div>
+
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="breachClause">Breach Clause</label>
+            <input
+              type="text"
+              id="breachClause"
+              name="breachClause"
+              value={formData.breachClause}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.breachClause && <span className="error-message">{errors.breachClause}</span>}
+          </div>
+          <div className="form-group">
+            <label htmlFor="liquidatedDamages">Liquidated Damages</label>
+            <input
+              type="text"
+              id="liquidatedDamages"
+              name="liquidatedDamages"
+              value={formData.liquidatedDamages}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.liquidatedDamages && <span className="error-message">{errors.liquidatedDamages}</span>}
+          </div>
+        </div>
+
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="conveyanceDeed">Conveyance Deed</label>
+            <input
+              type="text"
+              id="conveyanceDeed"
+              name="conveyanceDeed"
+              value={formData.conveyanceDeed}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.conveyanceDeed && <span className="error-message">{errors.conveyanceDeed}</span>}
+          </div>
+          <div className="form-group">
+            <label htmlFor="clearanceCertificate">Clearance Certificate</label>
+            <input
+              type="text"
+              id="clearanceCertificate"
+              name="clearanceCertificate"
+              value={formData.clearanceCertificate}
+              onChange={handleInputChange}
+              required
+            />
+            {errors.clearanceCertificate && <span className="error-message">{errors.clearanceCertificate}</span>}
+          </div>
+        </div>
+
         <div className="form-group">
-          <label htmlFor="salePrice">Sale Price (Rs.)</label>
+          <label htmlFor="otherExpenses">Other Expenses</label>
           <input
-            type="number"
-            id="salePrice"
-            name="salePrice"
-            value={formData.salePrice}
+            type="text"
+            id="otherExpenses"
+            name="otherExpenses"
+            value={formData.otherExpenses}
             onChange={handleInputChange}
             required
           />
-          {errors.salePrice && <span className="error-message">{errors.salePrice}</span>}
+          {errors.otherExpenses && <span className="error-message">{errors.otherExpenses}</span>}
         </div>
 
-        {/* Repeat similar structure for other fields */}
-
         <div className="form-actions">
-          <button type="button" onClick={handleGenerate}>Generate Agreement</button>
+          <button type="button" className="generate-button" onClick={handleGenerate}>
+            Generate Agreement
+          </button>
           {isGenerated && (
             <div className="download-buttons">
-              <button type="button" onClick={() => handleDownload('PDF')}>Download PDF</button>
-              <button type="button" onClick={() => handleDownload('DOCX')}>Download Word</button>
+              <button type="button" className="download-button" onClick={() => handleDownload('PDF')}>
+                Download PDF
+              </button>
+              <button type="button" className="download-button" onClick={() => handleDownload('DOCX')}>
+                Download Word
+              </button>
             </div>
           )}
           {isGenerated && (
-            <button type="button" onClick={handleDelete} className="delete-button">Delete</button>
+            <button type="button" onClick={handleDelete} className="delete-button">
+              Delete
+            </button>
           )}
         </div>
+
       </form>
     </div>
   );

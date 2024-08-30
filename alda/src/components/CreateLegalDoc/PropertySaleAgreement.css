@@ -1,105 +1,114 @@
 .property-sale-agreement {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-  }
-  
-  .property-sale-agreement h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 24px;
-  }
-  
-  .property-sale-agreement .form-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  .property-sale-agreement .form-group {
-    flex: 1;
-    margin-bottom: 15px;
-  }
-  
-  .property-sale-agreement .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  .property-sale-agreement .form-group input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .property-sale-agreement .form-group input:invalid {
-    border-color: #ff4d4f;
-  }
-  
-  .property-sale-agreement .error-message {
-    color: #ff4d4f;
-    font-size: 0.9em;
-    margin-top: 5px;
-  }
-  
-  .property-sale-agreement .form-actions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .property-sale-agreement .form-actions button {
-    padding: 12px 20px;
-    margin: 10px 0;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .property-sale-agreement .form-actions button:hover {
-    background-color: #0056b3;
-  }
-  
-  .property-sale-agreement .download-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .property-sale-agreement .download-buttons button {
-    padding: 12px 20px;
-    background-color: #1976d2;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .property-sale-agreement .download-buttons button:hover {
-    background-color: #115293;
-  }
-  
-  .property-sale-agreement .delete-button {
-    background-color: #dc3545;
-  }
-  
-  .property-sale-agreement .delete-button:hover {
-    background-color: #c82333;
-  }
-  
+  background-color: #1b1b2f;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px; /* Updated to match gift-deed-container */
+  margin: 50px auto;
+}
+
+.property-sale-agreement h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.property-sale-agreement .form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.property-sale-agreement .form-group {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.property-sale-agreement .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #bbb;
+}
+
+.property-sale-agreement .form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #303245;
+  color: #fff;
+}
+
+.property-sale-agreement .error-message {
+  color: #ff4d4f;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Buttons */
+.property-sale-agreement .generate-button,
+.property-sale-agreement .load-details-button {
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.property-sale-agreement .generate-button {
+  background-color: #7c1440;
+  color: #fff;
+}
+
+.property-sale-agreement .generate-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.property-sale-agreement .load-details-button {
+  background-color: #4caf50;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+/* Document Preview */
+.property-sale-agreement .document-preview {
+  margin-top: 20px;
+  background-color: #0f0f1e;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.property-sale-agreement .document-content {
+  background-color: #303245;
+  padding: 15px;
+  border-radius: 8px;
+  color: #bbb;
+}
+
+.property-sale-agreement .document-content p {
+  margin: 10px 0;
+}
+
+/* Buttons */
+.property-sale-agreement .delete-button,
+.property-sale-agreement .download-button {
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.property-sale-agreement .download-button {
+  background-color: #1976d2;
+}
+
+.property-sale-agreement .download-button:not(:last-child) {
+  margin-bottom: 10px;
+}

@@ -1,88 +1,124 @@
 .restraining-order-container {
+  background-color: #1b1b2f;
+  color: #fff;
   padding: 20px;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  max-width: 800px;
-  margin: 20px auto;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 50px auto;
 }
 
-.restraining-order-form h2 {
+.restraining-order-form {
+  background-color: #0f0f1e;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h2 {
   text-align: center;
-  color: #343a40;
-}
-
-.load-details-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
+  color: #fff;
   margin-bottom: 20px;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
-.load-details-button:hover {
-  background-color: #0056b3;
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .form-group {
+  flex: 1;
   margin-bottom: 15px;
 }
 
 .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: #495057;
+  color: #bbb;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ced4da;
   border-radius: 5px;
+  border: none;
+  background-color: #303245;
+  color: #fff;
 }
 
 .input-error {
-  border-color: #dc3545;
+  border: 2px solid #ff4d4f;
 }
 
 .error-message {
-  color: #dc3545;
-  font-size: 12px;
+  color: #ff4d4f;
+  font-size: 0.9em;
+  margin-top: 5px;
 }
 
 .form-buttons {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
   margin-top: 20px;
 }
 
 .generate-button,
 .download-button,
 .delete-button {
-  background-color: #28a745;
+  background-color: #7c1440;
   color: white;
   border: none;
   padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .generate-button:disabled {
-  background-color: #6c757d;
+  background-color: #555;
   cursor: not-allowed;
 }
 
+.download-button {
+  background-color: #1976d2;
+}
+
 .download-button:hover {
-  background-color: #218838;
+  background-color: #155a8a;
 }
 
 .delete-button {
-  background-color: #dc3545;
+  background-color: #d32f2f;
 }
 
 .delete-button:hover {
-  background-color: #c82333;
+  background-color: #c62828;
+}
+
+.load-details-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.load-details-button:hover {
+  background-color: #388e3c;
+}
+
+/* Adjustments for layout */
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-row .form-group:nth-child(odd) {
+  margin-right: 15px;
+}
+
+.form-row .form-group:nth-child(even) {
+  margin-left: 15px;
 }

@@ -1,0 +1,123 @@
+.employee-service-agreement-container {
+    background-color: #1b1b2f;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.employee-service-agreement{
+    width: 800px;
+    margin: 20px auto;
+}
+.employee-service-agreement-form {
+    background-color: #0f0f1e;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #bbb;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #303245;
+    color: #fff;
+}
+
+.input-error {
+    border: 2px solid #ff4d4f;
+}
+
+.error-message {
+    color: #ff4d4f;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.generate-button {
+    background-color: #7c1440;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.generate-button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.load-details-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.document-preview {
+    margin-top: 20px;
+    background-color: #0f0f1e;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.document-content {
+    background-color: #303245;
+    padding: 15px;
+    border-radius: 8px;
+    color: #bbb;
+}
+
+.document-content p {
+    margin: 10px 0;
+}
+
+.delete-button, .download-button {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.download-button {
+    background-color: #1976d2;
+}
+
+.download-button:not(:last-child) {
+    margin-bottom: 10px;
+}
