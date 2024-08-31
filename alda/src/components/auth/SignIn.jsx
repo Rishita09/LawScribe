@@ -1,38 +1,38 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { Link, useNavigate } from 'react-router-dom';
-import { GoogleLogin } from 'react-google-login';
-import './Auth.css';
+import React, { useState } from "react";
+import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
+import { GoogleLogin } from "react-google-login";
+import "./Auth.css";
 
 const SignIn = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/auth/login', {
+      const response = await axios.post("http://localhost:5000/auth/login", {
         username,
         password,
       });
       console.log(response.data);
-      navigate('/');
+      navigate("/");
     } catch (error) {
-      console.error('Error logging in:', error);
-      setError('Login failed. Please check your credentials and try again.');
+      console.error("Error logging in:", error);
+      setError("Login failed. Please check your credentials and try again.");
     }
   };
 
   const handleGoogleSuccess = (response) => {
-    console.log('Google sign-in success:', response);
+    console.log("Google sign-in success:", response);
     // Handle Google sign-in logic
-    navigate('/');
+    navigate("/");
   };
 
   const handleGoogleFailure = (response) => {
-    console.error('Google sign-in failure:', response);
+    console.error("Google sign-in failure:", response);
   };
 
   return (
@@ -62,7 +62,16 @@ const SignIn = () => {
             buttonText="Sign In with Google"
             onSuccess={handleGoogleSuccess}
             onFailure={handleGoogleFailure}
-            cookiePolicy={'single_host_origin'}
+            cookiePolicy={"single_host_origin"}
+            render={(renderProps) => (
+              <button
+                onClick={renderProps.onClick}
+                disabled={renderProps.disabled}
+                className="google-btn"
+              >
+                Sign In with Google
+              </button>
+            )}
           />
         </div>
         <Link to="/signup">Don't have an account? Sign Up</Link>

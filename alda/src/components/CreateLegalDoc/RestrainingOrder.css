@@ -22,7 +22,7 @@ h2 {
 .form-row {
   display: flex;
   gap: 15px;
-  flex-wrap: wrap; /* Ensure items wrap if necessary */
+  flex-wrap: wrap;
 }
 
 .form-group {
@@ -58,7 +58,7 @@ h2 {
 
 .form-buttons {
   display: flex;
-  flex-direction: column; /* Stack buttons vertically */
+  flex-direction: column;
   gap: 10px;
   margin-top: 20px;
 }
