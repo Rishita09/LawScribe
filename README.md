@@ -1,6 +1,6 @@
 
 
-# 📜 **LawScribe**: AI-based Legal Documentation Assistant ⚖️
+## 📜 **LawScribe**: AI-based Legal Documentation Assistant ⚖️
 
 👨‍💼 **Developers**:
 - Anupam Kumar (2347104)
