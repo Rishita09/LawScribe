@@ -1,12 +1,25 @@
-
-
-## 📜 **LawScribe**: AI-based Legal Documentation Assistant ⚖️
+# 📜 **LawScribe**: AI-based Legal Documentation Assistant ⚖️
 
 👨‍💼 **Developers**:
-- Anupam Kumar (2347104)
-- Aryan Majhi (2347107)
-- Rishita Shah (2347143)
-  
+- [Anupam Kumar (2347104)](https://github.com/anupamk9)  
+- [Aryan Majhi (2347107)](https://github.com/aryanmajhi75)  
+- [Rishita Shah (2347143)](https://github.com/rishita09)  
+
+🗓️ **Completion Date**: August 2024
+
+---
+
+## 🌟 **Introduction**
+Welcome to **LawScribe**, your AI-powered companion for creating and managing legal documents effortlessly! 🚀 This web application leverages cutting-edge AI models to simplify legal drafting, editing, and comprehension, providing users with customizable templates and real-time legal insights.
+
+---
+
+## ⚙️ **Features**
+- 📝 **Automated Legal Document Creation**: Generate professional legal documents with just a few inputs.
+- 🎯 **Customization**: Fine-tune documents for specific jurisdictions and industries.
+- 🔍 **Legal Jargon Simplified**: Understand complex legal terms with easy-to-read explanations.
+- 🛡️ **Quality Assurance**: Automatically flag errors and ensure compliance with legal standards.
+- 📑
 🗓️ **Completion Date**: August 2024
 
 ---
