@@ -103,7 +103,6 @@ const RestrainingOrder = () => {
     doc.setFont("Times", "normal");
     doc.setFontSize(12);
 
-    // Centered text for the first lines
     doc.text("IN THE COURT OF", 105, 20, { align: "center" });
     doc.text(formData.courtName.toUpperCase(), 105, 30, { align: "center" });
     doc.text(`THE CIVIL JUDGE (${formData.judgeName.toUpperCase()})`, 105, 40, {
@@ -116,7 +115,6 @@ const RestrainingOrder = () => {
     doc.text("…Defendants:", 105, 90, { align: "center" });
     doc.text(formData.defendantName, 105, 100, { align: "center" });
 
-    // Document body
     const content = doc.splitTextToSize(generateDocumentContent(), 180);
     doc.text(content, 10, 110);
     doc.save("Restraining_Order.pdf");
