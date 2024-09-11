@@ -1,0 +1,23 @@
+.bottom-bar {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #3e3c3c;
+}
+
+.bottom-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.bottom-bar button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
